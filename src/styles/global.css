@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+@import "@catppuccin/tailwindcss/mocha.css";
+@font-face {
+  font-family: besley;
+  src: url(/fonts/Besley-Italic-variable.ttf) format("truetype");
+}
+@font-face {
+  font-family: cooper;
+  src: url(/fonts/Cooper-variable.ttf) format("truetype");
+}
+@theme {
+  --font-besley: "besley", serif;
+  --font-jost: "Jost", sans-serif;
+  --font-cooper: "cooper", serif;
+}
