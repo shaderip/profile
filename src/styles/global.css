@@ -2,15 +2,24 @@
 @import "tailwindcss";
 @import "@catppuccin/tailwindcss/mocha.css";
 @font-face {
-  font-family: besley;
-  src: url(/fonts/Besley-Italic-variable.ttf) format("truetype");
+  font-family: cooper;
+  src: url(/fonts/Cooper-variable.woff2) format("woff2");
+  font-display: swap;
 }
 @font-face {
-  font-family: cooper;
-  src: url(/fonts/Cooper-variable.ttf) format("truetype");
+  font-family: besley;
+  src: url(/fonts/Besley-italic-variable.woff2) format("woff2");
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: besley;
+  src: url(/fonts/Besley-variable.woff2) format("woff2");
+  font-display: swap;
+  font-style: normal;
 }
 @theme {
-  --font-besley: "besley", serif;
   --font-jost: "Jost", sans-serif;
   --font-cooper: "cooper", serif;
+  --font-besley: "besley", serif;
 }

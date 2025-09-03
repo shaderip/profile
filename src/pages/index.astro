@@ -1,59 +1,31 @@
 ---
 import "../styles/global.css";
+import Head from "../components/head.astro";
+import Holding from "../components/holding.astro";
+import Links from "../components/links.astro";
+import Bg from "../components/bg.astro";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" /><meta
-      name="viewport"
-      content="width=device-width"
-    />
-    <meta name="generator" content={Astro.generator} /><meta
-      name="keywords"
-      content="lunar proxy, unblocking, shade, south carolina, html, tailwind, highschool, frontend, web development, developer, astro, portfolio, design, web designer"
-    />
-    <title>Shade.rip</title>
-  </head>
-  <body class="bg-ctp-base">
-    <main
-      class="bg-[url(/images/forest.jpg)] bg-cover bg-center bg-no-repeat text-ctp-text flex-col min-h-screen justify-center flex items-center gap-4 p-2"
-    >
-      <div
-        class="md:p-8 p-4 min-w-sm md:min-w-lg text-center bg-ctp-surface0/50 backdrop-blur-sm rounded-xl"
-      >
-        <img
-          src="/images/smoke.jpeg"
-          alt="cat smoking"
-          class="rounded-full w-32 mx-auto"
-        />
-        <h1 class="text-ctp-blue font-cooper font-bold text-4xl md:text-6xl">
-          Shade
-        </h1>
-        <p class="text-ctp-text font-jost text-md md:text-lg">
-          i'm shade, an amateur frontend web developer 🐾<br />i'm a sophomore
-          from south carolina 💔<br />i like cats (type shit) 🐈<br />currently
-          learning <span class="font-bold text-ctp-blue">tailwindcss</span> and <span
-            class="font-bold text-ctp-red">astro</span
-          >
-          ⭐
-        </p>
-      </div>
-      <nav
-        class="p-2 min-w-xs md:min-w-sm text-center bg-ctp-surface0/50 backdrop-blur-sm rounded-xl"
-      >
-        <p class="font-jost">
-          <a
-            href="https://github.com/shaderip"
-            class="text-ctp-teal hover:text-ctp-teal-800 underline">github</a
-          > • <a
-            href="https://steamcommunity.com/id/ripshade"
-            class="text-ctp-teal hover:text-ctp-teal-800 underline">steam</a
-          > • <a
-            href="https://instagram.com/murderevery1uknow"
-            class="text-ctp-teal hover:text-ctp-teal-800 underline">instagram</a
-          >
-        </p>
-      </nav>
-    </main>
-  </body>
-</html>
+<Head />
+<title>ripshade</title>
+<body class="bg-ctp-base">
+  <Bg>
+    <Holding>
+      <img
+        src="/images/smoke.jpeg"
+        alt="cat smoking"
+        class="rounded-full w-32 mx-auto"
+      />
+      <h1 class="text-ctp-blue font-cooper font-bold text-4xl md:text-6xl">
+        Shade
+      </h1>
+      <p class="text-ctp-text font-jost text-md md:text-lg">
+        i keep calling...
+      </p>
+      <p class="text-ctp-red-500 underline font-jost text-md md:text-lg">
+        <a href="/projects" class="hover:text-ctp-red-800">my projects</a>
+      </p>
+    </Holding>
+    <Links />
+  </Bg>
+</body>
