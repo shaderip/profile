@@ -1,31 +1,54 @@
 ---
 import "../styles/global.css";
-import Head from "../components/head.astro";
-import Holding from "../components/holding.astro";
-import Links from "../components/links.astro";
-import Bg from "../components/bg.astro";
 ---
 
-<Head />
-<title>ripshade</title>
-<body class="bg-ctp-base">
-  <Bg>
-    <Holding>
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width" />
+  <title>ripshade</title>
+</head>
+<body class="bg-ctp-base flex min-h-screen items-center justify-center">
+  <div
+    class="font-jost align-center bg-ctp-surface0 text-ctp-test shadow-ctp-mauve/100 flex flex-col rounded-xl p-4 leading-relaxed md:max-w-lg"
+  >
+    <div class="flex flex-row items-center gap-2">
       <img
         src="/images/smoke.jpeg"
-        alt="cat smoking"
-        class="rounded-full w-32 mx-auto"
+        alt="cat smoking (aura)"
+        class="border-ctp-mauve w-24 rounded-full border-4"
       />
-      <h1 class="text-ctp-blue font-cooper font-bold text-4xl md:text-6xl">
-        Shade
-      </h1>
-      <p class="text-ctp-text font-jost text-md md:text-lg">
-        <p>a shitty web dev but at least i dont use ai</p>
-      </p>
-      <p class="text-ctp-red-500 underline font-jost text-md md:text-lg">
-        <a href="/projects" class="hover:text-ctp-red-800">my projects</a>
-      </p>
-    </Holding>
-    <Links />
-  </Bg>
+      <div>
+        <h1 class="font-cooper text-ctp-mauve text-4xl font-bold">ripshade</h1>
+        <p class="text-ctp-subtext1">he/him</p>
+      </div>
+    </div>
+    <h2 class="text-ctp-text text-l mt-2 font-semibold">About me</h2>
+    <p class="text-ctp-subtext1 text-md leading-loose">
+      I'm Shade, a shitty learning webdev.
+    </p>
+    <p class="text-ctp-subtext1 text-md">
+      Did you know that under the 2nd ammendment, you have the protected right
+      to a command prompt in the Windows recovery tools?<br />
+      <span class="text-ctp-subtext0 text-sm">
+        Source:
+        <a
+          href="https://www.youtube.com/watch?v=MmJ8NVLji84&t=1251s"
+          class="text-ctp-red font-semibold"
+        >
+          YouTube
+        </a>
+      </span>
+    </p>
+    <h2 class="text-ctp-text text-l font-semibold">Learning</h2>
+    <p class="text-ctp-subtext1 text-md">
+      I'm currently learning... <br />
+      <span class="text-ctp-blue font-semibold">Tailwind</span>,
+      <span class="text-ctp-red font-semibold">Astro</span>, and
+      <span class="text-ctp-yellow font-semibold">Javascript</span>.
+    </p>
+    <img
+      src="https://skillicons.dev/icons?i=tailwind,astro,javascript,html,css,bash,linux&perline=10"
+      alt="astro, tailwind, html, css, bash, linux"
+      class="mt-4 h-12 gap-2"
+    />
+  </div>
 </body>
