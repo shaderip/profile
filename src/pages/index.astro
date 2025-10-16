@@ -1,73 +1,23 @@
 ---
-import "../styles/global.css";
+import Layout from "../layouts/Layout.astro";
 ---
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
-  <title>Shade</title>
-</head>
-<body
-  class="bg-ctp-base flex min-h-screen flex-col items-center justify-center bg-[url(/images/flowers-5.jpg)] bg-cover bg-no-repeat"
->
-  <div
-    class="bg-ctp-surface0/80 font-jost min-w-sm rounded-xl p-6 backdrop-blur-xs md:max-w-md"
-  >
-    <div class="flex flex-row gap-4">
-      <img
-        src="/images/lila.png"
-        alt="Shade's profile picture"
-        class="border-ctp-mauve h-24 w-24 rounded-full border-4"
-      />
-      <div>
-        <h1 class="font-cooper text-ctp-mauve text-5xl font-bold">ripshade</h1>
-        <p class="text-ctp-subtext1 text-lg leading-relaxed">they/them</p>
-      </div>
+<Layout title="Shade">
+  <div class="font-lexend flex h-screen flex-col items-center justify-center">
+    <h1 class="text-red mb-4 text-6xl font-semibold">ripshade</h1>
+    <div
+      class="align-center flex flex-col-reverse items-center md:max-w-sm md:flex-row"
+    >
+      <p class="text-2xl text-black">
+        i'm shade, a shitty learning front-end dev.
+      </p>
+      <img src="https://shade.rip/lick.gif" class="h-36" />
     </div>
-    <h2 class="text-ctp-subtext1 font-bold">About me</h2>
-    <p class="text-md text-ctp-subtext0">
-      I'm Shade, a shitty learning webdev. I like cats and canids, and I have a
-      golden retriever. I seem to pretend that I know what I'm doing...
-    </p>
-    <h2 class="text-ctp-subtext1 font-bold">Learning</h2>
-    <p class="text-md text-ctp-subtext0">
-      I'm currently trying to learn...<br />
-      <span class="text-ctp-blue font-bold">Tailwind</span>,
-      <span class="text-ctp-red font-bold">Astro</span>, and
-      <span class="text-ctp-yellow font-bold">JavaScript</span>.
-    </p>
-    <img
-      src="https://lanyard.cnrad.dev/api/1408956378600702042?bg=1e1e2e50&hideActivity=true"
-      alt="Discord profile widget"
-      class="mt-2 rounded-md"
-    />
-    <img
-      src="https://skillicons.dev/icons?i=astro,tailwind,js,html,css,github,windows,vscode"
-      alt="skill icons"
-      class="mt-2"
-    />
-    <div class="mt-2">
-      <a
-        href="https://github.com/shaderip"
-        class="bg-ctp-surface1/70 text-ctp-subtext1 hover:text-ctp-subtext0 hover:bg-ctp-surface0/80 inline-flex items-center space-x-2 rounded-md p-1 leading-none"
-      >
-        <img src="/images/github.png" alt="github" class="h-5" />
-        <p class="text-sm">GitHub</p>
-      </a>
-      <a
-        href="https://discord.com/users/1408956378600702042"
-        class="bg-ctp-surface1/70 text-ctp-subtext1 hover:text-ctp-subtext0 hover:bg-ctp-surface0/80 inline-flex items-center space-x-2 rounded-md p-1 leading-none"
-      >
-        <img src="/images/discord.png" alt="discord" class="h-5" />
-        <p class="text-sm">Discord</p>
-      </a>
-      <a
-        href="https://steamcommunity.com/id/ripshade/"
-        class="bg-ctp-surface1/70 text-ctp-subtext1 hover:text-ctp-subtext0 hover:bg-ctp-surface0/80 inline-flex items-center space-x-2 rounded-md p-1 leading-none"
-      >
-        <img src="/images/steam.png" alt="steam" class="h-5" />
-        <p class="text-sm">Steam</p>
-      </a>
+    <div class="flex flex-col items-center md:max-w-sm md:flex-row">
+      <img src="paw.gif" class="h-36" />
+      <p class="text-2xl text-black">
+        i like cats and canids, and i have a ~7 month old golden retriever
+      </p>
     </div>
   </div>
-</body>
+</Layout>

@@ -1,3 +1,3 @@
 # Shade.rip
 
-my bio site, but in astro
+My shitty profile page and it's still in astro i just rewrote it

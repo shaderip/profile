@@ -1,5 +1,5 @@
 {
-  "name": "shaderip",
+  "name": "profile",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -9,14 +9,13 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@tailwindcss/vite": "^4.1.12",
-    "astro": "^5.13.3",
-    "tailwindcss": "^4.1.12"
+    "@tailwindcss/vite": "^4.1.14",
+    "astro": "^5.14.5",
+    "tailwindcss": "^4.1.14"
   },
   "devDependencies": {
-    "@catppuccin/tailwindcss": "^1.0.0",
     "prettier": "^3.6.2",
     "prettier-plugin-astro": "^0.14.1",
-    "prettier-plugin-tailwindcss": "^0.6.14"
+    "prettier-plugin-tailwindcss": "^0.7.0"
   }
 }
