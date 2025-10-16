@@ -2,6 +2,7 @@
 @import "tailwindcss";
 @theme {
   --font-lexend: "Lexend", sans-serif;
+  --font-comic-sans: "Comic Sans MS";
   --color-red: #fb1812;
   --color-black: #131112;
   --color-white: #fcfdfd;
