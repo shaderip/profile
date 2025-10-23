@@ -1,26 +1,46 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { Icon } from "astro-icon/components";
 ---
 
-<Layout title="Shade">
+<Layout title="shade">
   <div
-    class="font-lexend flex h-screen flex-col items-center justify-center p-4"
+    class="font-lexend flex flex-col items-center rounded-lg bg-white/60 p-4"
   >
-    <h1 class="text-red mb-4 text-6xl font-semibold">ripshade</h1>
-    <div
-      class="align-center flex flex-col-reverse items-center md:max-w-sm md:flex-row"
-    >
-      <p class="text-2xl text-black">
-        i'm shade. i play minecraft and listen to music
-        <span class="font-comic-sans font-semibold">:3</span>
-      </p>
-      <img src="lick.gif" class="h-36" />
+    <div class="flex flex-row items-center gap-2 text-black opacity-100">
+      <img
+        alt="shade pfp"
+        src="/images/pfp.png"
+        class="h-24 w-24 rounded-full"
+      />
+      <div class="flex flex-col gap-0 p-0">
+        <h1 class="text-2xl font-semibold">ripshade</h1>
+        <p class="text-xs">@coyotes67</p>
+        <p class="text-sm">she/her</p>
+      </div>
     </div>
-    <div class="flex flex-col items-center md:max-w-sm md:flex-row">
-      <img src="paw.gif" class="h-36" />
-      <p class="text-2xl text-black">
-        i like cats and canids, and i have a ~7 month old golden retriever
-      </p>
+    <div class="flex flex-row gap-1">
+      <a
+        href="https://instagram.com/murderevery1uknow"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Icon name="fa:instagram" class="text-black" />
+      </a>
+      <a
+        href="https://discord.com/users/1408956378600702042"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Icon name="fa7-brands:discord" class="text-black" />
+      </a>
+      <a
+        href="https://git.canine.tools/glaceon"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Icon name="devicon-plain:forgejo" />
+      </a>
     </div>
   </div>
 </Layout>
