@@ -1,6 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { Icon } from "astro-icon/components";
+import Icons from "../components/Icons.astro";
 ---
 
 <Layout title="shade">
@@ -14,33 +14,24 @@ import { Icon } from "astro-icon/components";
         class="h-24 w-24 rounded-full"
       />
       <div class="flex flex-col gap-0 p-0">
-        <h1 class="text-2xl font-semibold">ripshade</h1>
-        <p class="text-xs">@coyotes67</p>
-        <p class="text-sm">she/her</p>
+        <h1 class="font-semibold md:text-2xl">ripshade</h1>
+        <p class="md:text-sm">@coyotes67</p>
+        <p class="md:text-base">she/her</p>
       </div>
     </div>
     <div class="flex flex-row gap-1">
-      <a
-        href="https://instagram.com/murderevery1uknow"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <Icon name="fa:instagram" class="text-black" />
-      </a>
-      <a
-        href="https://discord.com/users/1408956378600702042"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <Icon name="fa7-brands:discord" class="text-black" />
-      </a>
-      <a
-        href="https://git.canine.tools/glaceon"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <Icon name="devicon-plain:forgejo" />
-      </a>
+      <Icons
+        icon="fa:instagram"
+        link="https://instagram.com/murderevery1uknow"
+      />
+      <Icons
+        icon="fa7-brands:discord"
+        link="https://discord.com/users/1408956378600702042"
+      />
+      <Icons
+        icon="devicon-plain:forgejo"
+        link="https://git.canine.tools/glaceon"
+      />
     </div>
   </div>
 </Layout>
