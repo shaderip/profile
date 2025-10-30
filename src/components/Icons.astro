@@ -3,6 +3,11 @@ import { Icon } from "astro-icon/components";
 const { link, icon } = Astro.props;
 ---
 
-<a href={link} target="_blank" rel="noopener noreferrer" class="h-4">
+<a
+  href={link}
+  target="_blank"
+  rel="noopener noreferrer"
+  class="hover:text-ctp-sapphire text-ctp-subtext0 h-6"
+>
   <Icon name={icon} />
 </a>
